@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, FlatList, Button } from 'react-native';
 import GoalItem from './GoalItem';
 import GoalInput from './GoalInput';
 import { StatusBar } from 'expo-status-bar';
+import { AsyncStorage } from 'react-native';
+
 
 export default function App() {
   const [list, setList] = useState([]);
@@ -48,7 +50,7 @@ export default function App() {
     <>
       <StatusBar style='light' />
       <View style={styles.container}>
-        <Text style={styles.title}>Goals of your life...!</Text>
+        <Text style={styles.title}>Goals of your day...!</Text>
         <Button title='Add New Goal' onPress={openModal} color="#A070D6" />
 
         <GoalInput
