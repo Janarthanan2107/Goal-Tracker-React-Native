@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Goal Tracker",
+    "slug": "Goal-Tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/goal.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/goal.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.janarthanan2103.goalTracker"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "12974de4-4e09-4a0b-8f32-523f85ff9672"
+      }
+    }
+  }
+}
