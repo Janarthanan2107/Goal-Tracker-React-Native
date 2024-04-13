@@ -65,6 +65,9 @@ export default function App() {
           <Text style={styles.subtitle}>List of goals</Text>
           <FlatList
             data={list}
+            ListEmptyComponent={() => (
+              <Text style={styles.emptyListText}>No goals for today!</Text>
+            )}
             renderItem={({ item, index }) => (
               <GoalItem
                 text={item}
@@ -74,6 +77,7 @@ export default function App() {
             )}
             keyExtractor={(item, index) => index.toString()}
           />
+
         </View>
       </View>
     </>
@@ -110,5 +114,12 @@ const styles = StyleSheet.create({
   goalsContainer: {
     paddingTop: 10,
     flex: 6
+  },
+
+  emptyListText: {
+    textAlign: 'center',
+    fontSize: 18,
+    color: 'gray',
+    marginTop: 20,
   },
 });
